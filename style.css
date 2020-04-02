@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    /* price */
+    .pricingdiv ul.theplan {
+        border-radius: 0;
+        width: 100%;
+        margin-right: 0;
+    }
+    .pricingdiv ul.theplan:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    .pricingdiv a.pricebutton {
+        display: block;
+    }
+    /* banner */
+    .banner .container {
+        flex-direction: column;
+    }
+}
+
+.container .row {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+
+/* banner */
+
+.banner {
+    height: 85vh;
+    position: relative;
+    background: #ffe5e5;
+}
+
+.banner .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.banner .container .content {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.banner .container .content .content-inner h1 {
+    font-family: "Playfair Display";
+    color: #233567;
+    font-size: 3rem;
+}
+
+.banner .container .content .content-inner p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    color: #233567;
+    width: 520px;
+    margin: 32px 0;
+}
+
+.banner .container .content .content-inner .btn-row a {
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    font-size: 1rem;
+    padding: 0px 32px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    background: #d57868;
+    border-radius: 100px;
+}
+
+.banner .container .image {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner .container .image .image-inner img {
+    width: 100%;
+    z-index: 50;
+}
+
+
+/* pricing */
+
+.price {
+    background: #ffe5e5;
+}
+
+.pricingdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.pricingdiv ul.theplan {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    background: #7c3ac9;
+    position: relative;
+    width: 250px;
+    /* width of each table */
+    margin-right: 10px;
+    /* spacing between tables */
+    margin-bottom: 1em;
+    transition: all .5s;
+}
+
+.pricingdiv ul.theplan:hover {
+    /* when mouse hover over pricing table */
+    transform: scale(1.05);
+    transition: all .5s;
+    z-index: 100;
+    box-shadow: 0 0 10px gray;
+}
+
+.pricingdiv ul.theplan li {
+    margin: 10px 20px;
+    position: relative;
+}
+
+.pricingdiv ul.theplan li.title {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+}
+
+.pricingdiv ul.theplan:nth-of-type(2) {
+    background: #e53499;
+}
+
+.pricingdiv ul.theplan:nth-of-type(3) {
+    background: #2a2cc8;
+}
+
+.pricingdiv ul.theplan:last-of-type {
+    /* remove right margin in very last table */
+    margin-right: 0;
+}
+
+
+/*very last LI within each pricing UL */
+
+.pricingdiv ul.theplan li:last-of-type {
+    text-align: center;
+    margin-top: auto;
+    /*align last LI (price botton li) to the very bottom of UL */
+}
+
+.pricingdiv a.pricebutton {
+    background: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: navy;
+    text-transform: uppercase;
+}
+
+.price .price-inner .image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price .price-inner .image .image-inner img {
+    width: 20%;
+    z-index: 50;
+}
+
+.price .price-inner .image .image-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Feature */
+
+.features {
+    padding: 10% 5%;
+    background: #ffe5e5;
+}
+
+.features .features-inner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.features .features-inner .features-content h3 {
+    font-family: "Playfair Display";
+    color: #233567;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    margin: 0 0 40px;
+}
+
+.features .features-inner .features-content p {
+    line-height: 1.8rem;
+    font-weight: 300;
+    color: #233567;
+    margin-bottom: 88px;
+}
+
+.features .features-inner .features-content .btn-row a {
+    color: #233567;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.features .features-inner .features-content .btn-row a img {
+    margin-left: 16px;
+}
+
+.features .features-inner .features-list {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.features .features-inner .features-list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.features .features-inner .features-list ul li {
+    list-style: none;
+}
+
+.features .features-inner .features-list ul li img {
+    margin-bottom: 24px;
+}
+
+.features .features-inner .features-list ul li h5 {
+    color: #233567;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.features .features-inner .features-list ul li p {
+    line-height: 1.8rem;
+    font-weight: 300;
+    color: #233567;
+    width: 270px;
+    margin: 16px 0 72px;
+    font-size: 1rem;
+}
+
+footer {
+    height: 8vh;
+    background: rgb(235, 196, 125);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-heart {
+    color: #f2003c;
+}
