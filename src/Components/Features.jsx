@@ -28,7 +28,7 @@ var features = [
     name: "Fast Delivery",
     description:
       "We understand the importance of prompt access to your dreams. With Ast Sleep, you can achieve lucid dreaming faster than ever before.",
-    svg: "fast.svg",
+    svg: "Fast.svg",
   },
   {
     name: "Dream Storage",
