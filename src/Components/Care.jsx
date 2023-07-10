@@ -6,7 +6,7 @@ const Care = () => {
     <div className='md:p-36  flex flex-col md:flex-row items-center   '>
       <div className='p-5 '>
         <h2 className=' pb-2  text-3xl md:text-5xl font-bold  bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-100'>
-          Technoloy isn't the whole story
+          Technoloy isn&#39;t the whole story
         </h2>
         <p className=''>
           Technology can support self-care and therapy through access to

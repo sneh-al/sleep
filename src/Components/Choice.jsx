@@ -21,7 +21,7 @@ const Choice = () => {
           The right choice can make all diffrence
         </h4>
         <p className=' '>
-          With GetSleep, you'll experience a transformation in your sleep
+          With GetSleep, you&#39;ll experience a transformation in your sleep
           quality, wake up feeling refreshed and rejuvenated, and gain a deeper
           understanding of the incredible world of dreams.
         </p>

@@ -9,8 +9,8 @@ const Withus = () => {
             We are delivering life changing care
           </h2>
           <p className=' max-w-prose '>
-            We've redefined sleep care from ground up so that everyone can get
-            great care, wherever they are{" "}
+            We&#39;ve redefined sleep care from ground up so that everyone can
+            get great care, wherever they are{" "}
           </p>
           <p className='  '>
             If you are passionate about sleep, we'd love to hear from you.
