@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/Components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -10,21 +10,17 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
-       keyframes: {
+      keyframes: {
         loading: {
-          '0%': { left: '-100%' },
-          '50%': { left: '100%' },
-          '100%': { left: '-100%' },
+          "0%": { left: "-100%" },
+          "50%": { left: "100%" },
+          "100%": { left: "-100%" },
         },
       },
       animation: {
-        loading: 'loading 3s linear infinite',
+        loading: "loading 3s linear infinite",
       },
     },
   },
   plugins: [],
 };
-
-
-
-     
