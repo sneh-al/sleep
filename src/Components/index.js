@@ -3,7 +3,7 @@ import Header from "./Header";
 import About from "./About";
 import Choice from "./Choice";
 import Gift from "./Gift";
-import How from "./HOw";
+import How from "./How";
 import AboutHero from "./AboutHero";
 import Teamup from "./Teamup";
 import Withus from "./Withus";
