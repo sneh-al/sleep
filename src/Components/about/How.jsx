@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Step from "./Step";
+import Step from "../Step";
 
 const How = () => {
   return (
@@ -28,25 +28,25 @@ const features = [
     title: "Scientifically Grounded Approach",
     description:
       "We believe in the importance of scientific research and evidence-based methods.",
-    svg: "science.svg",
+    svg: "svg/features/science.svg",
   },
   {
     title: "Cutting-Edge Technology",
     description:
       "We leverage cutting-edge technology to create a seamless and personalized sleep experience.",
-    svg: "technology.svg",
+    svg: "svg/features/technology.svg",
   },
 
   {
     title: "Personalized Sleep Solutions",
     description:
       "GetSleep provides personalized sleep solutions tailored to your specific preferences and requirements.",
-    svg: "personnalized.svg",
+    svg: "svg/features/personnalized.svg",
   },
   {
     title: "Community Support",
     description:
       "Connect with like-minded sleep enthusiasts, share experiences, and gain valuable insights and support.",
-    svg: "community.svg",
+    svg: "svg/features/community.svg",
   },
 ];

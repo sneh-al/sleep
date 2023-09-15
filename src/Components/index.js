@@ -1,16 +1,24 @@
-import Hero from "./Hero";
 import Header from "./Header";
-import About from "./About";
-import Choice from "./Choice";
-import Gift from "./Gift";
-import How from "./How";
-import AboutHero from "./AboutHero";
-import Teamup from "./Teamup";
-import Withus from "./Withus";
-import WhyHero from "./WhyHero";
-import Features from "./Features";
-import Care from "./Care";
-import Comitment from "./Comitment";
+
+// index page component
+import Hero from "./index/Hero";
+import About from "./index/About";
+import Choice from "./index/Choice";
+import Gift from "./index/Gift";
+
+import WhyHero from "./why/WhyHero";
+import Features from "./why/Features";
+import Care from "./why/Care";
+import Comitment from "./why/Comitment";
+
+
+// about page components 
+import AboutHero from "./about/AboutHero";
+import Teamup from "./about/Teamup";
+import Withus from "./about/Withus";
+import How from "./about/How";
+
+
 
 export {
   Hero,

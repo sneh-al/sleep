@@ -1,13 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+import { animate } from "motion";
 
 const Header = () => {
+  useEffect(() => {
+    animate(
+      "header",
+      { y: [0, -100, 0] },
+      {
+        duration: 3,
+        offset: [0, 0.25, 0.75],
+      }
+    );
+  
+ 
+  }, [])
+  
   return (
     <header className='z-50 flex fixed top-0 w-full bg-black '>
       <nav className='m-auto flex items-center w-full  md:px-36  '>
-        <div className='grid place-content-center p-5'>GetSleep</div>
+        <a className='grid place-content-center p-5' href='/'>
+          GetSleep
+        </a>
         <ul className='hidden md:flex justify-around p-5 ml-auto '>
           {["home", "about", "why"].map((link, i) => (
             <li key={i} className='grid place-content-center'>

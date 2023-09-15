@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import CustomeButton from "./CustomeButton";
-import CustomeLink from "./CustomeLink";
+import CustomeButton from "../layout/CustomeButton";
+import CustomeLink from "../layout/CustomeLink";
 
 const Choice = () => {
   return (
     <div className='bg-slate-900 flex flex-col items-center  p-10 md:flex-row md:p-36 justify-evenly '>
       <div className=''>
         <Image
-          src='./choice.svg'
+          src='./svg/about/choice.svg'
           width={400}
           height={400}
           alt='choice'
@@ -17,7 +17,7 @@ const Choice = () => {
       </div>
 
       <div className='flex flex-col gap-5 max-w-prose'>
-        <h4 className=' text-3xl md:text-5xl font-bold  bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-green-500 dark:to-yellow-100'>
+        <h4 className='title text-3xl md:text-5xl font-bold  bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-green-500 dark:to-yellow-100'>
           The right choice can make all diffrence
         </h4>
         <p className=' '>

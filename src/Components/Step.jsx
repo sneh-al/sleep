@@ -5,15 +5,17 @@ import Image from "next/image";
 
 const Step = ({ feature }) => {
   return (
-    <div className='p-5 flex bg-slate-800 rounded-2xl  '>
+    <div className='bg-slate-900 max-w-prose p-5 rounded-2xl flex items-center flex-col-reverse md:flex-row gap-2   relative overflow-hidden  md:h-44 '>
       <div>
-        <h4 className='font-bold text-xl'>{feature.title}</h4>
+        <h4 className='font-bold text-2xl py-3 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-100'>
+          {feature.title}
+        </h4>
         <p className='font-semibold   '>{feature.description}</p>
       </div>
       <div className='   '>
         <Image
-          width={200}
-          height={200}
+          width={250}
+          height={250}
           priority={false}
           placeholder='blur'
           blurDataURL={feature.svg}
